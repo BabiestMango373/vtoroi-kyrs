@@ -1,0 +1,6 @@
+C:\Users\ZaOrd\source\repos\laba10\ProductionTests\bin\Debug\net8.0\CoverletSourceRootsMapping_ProductionTests
+C:\Users\ZaOrd\source\repos\laba10\ProductionTests\obj\Debug\net8.0\ProductionTests.csproj.AssemblyReference.cache
+C:\Users\ZaOrd\source\repos\laba10\ProductionTests\obj\Debug\net8.0\ProductionTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZaOrd\source\repos\laba10\ProductionTests\obj\Debug\net8.0\ProductionTests.AssemblyInfoInputs.cache
+C:\Users\ZaOrd\source\repos\laba10\ProductionTests\obj\Debug\net8.0\ProductionTests.AssemblyInfo.cs
+C:\Users\ZaOrd\source\repos\laba10\ProductionTests\obj\Debug\net8.0\ProductionTests.csproj.CoreCompileInputs.cache
