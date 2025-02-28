@@ -75,7 +75,6 @@ namespace ClassLibrary10
         public override void RandomInit()
         {
             base.RandomInit();
-            Random rnd = new Random();
             WorkshopName = "Мастерская_" + rnd.Next(1, 100);
             Area = rnd.Next(10, 201);
         }
