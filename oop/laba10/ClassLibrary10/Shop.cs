@@ -8,6 +8,8 @@ namespace ClassLibrary10
 {
     public class Shop : Production, IInit
     {
+        static Random rnd = new Random();
+
         private string shopName;
 
         public string ShopName
@@ -78,8 +80,7 @@ namespace ClassLibrary10
 
         public override void RandomInit()
         {
-            base.RandomInit();
-            Random rnd = new Random();
+            base.RandomInit(); 
             ShopName = "Цех_" + rnd.Next(1, 100);
             string[] types = { "основной", "вспомогательный", "обслуживающий", "подсобный", "побочный", "экспериментальный" };
             Type = types[rnd.Next(types.Length)];
@@ -92,6 +93,11 @@ namespace ClassLibrary10
             Shop shop = obj as Shop;
             if(shop == null) return false;
             return this.ShopName == shop.ShopName && this.Type == shop.Type;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + $"{shopName}, {type}";
         }
 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ProgramTest\\ProgramTest.csproj": {}
+    "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ProgramTest\\ProgramTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ClassLibrary10\\ClassLibrary10.csproj": {
+    "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ClassLibrary10\\ClassLibrary10.csproj",
+        "projectUniqueName": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj",
         "projectName": "ClassLibrary10",
-        "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ClassLibrary10\\ClassLibrary10.csproj",
+        "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj",
         "packagesPath": "C:\\Users\\gysik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ClassLibrary10\\obj\\",
+        "outputPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\laba10\\laba10.csproj": {
+    "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\laba10\\laba10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\laba10\\laba10.csproj",
+        "projectUniqueName": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\laba10\\laba10.csproj",
         "projectName": "laba10",
-        "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\laba10\\laba10.csproj",
+        "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\laba10\\laba10.csproj",
         "packagesPath": "C:\\Users\\gysik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\laba10\\obj\\",
+        "outputPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\laba10\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +107,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ClassLibrary10\\ClassLibrary10.csproj": {
-                "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ClassLibrary10\\ClassLibrary10.csproj"
+              "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj": {
+                "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ProgramTest\\ProgramTest.csproj": {
+    "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ProgramTest\\ProgramTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ProgramTest\\ProgramTest.csproj",
+        "projectUniqueName": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ProgramTest\\ProgramTest.csproj",
         "projectName": "ProgramTest",
-        "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ProgramTest\\ProgramTest.csproj",
+        "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ProgramTest\\ProgramTest.csproj",
         "packagesPath": "C:\\Users\\gysik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ProgramTest\\obj\\",
+        "outputPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ProgramTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -176,11 +176,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ClassLibrary10\\ClassLibrary10.csproj": {
-                "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\ClassLibrary10\\ClassLibrary10.csproj"
+              "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj": {
+                "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj"
               },
-              "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\laba10\\laba10.csproj": {
-                "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\лаб\\laba10\\laba10\\laba10.csproj"
+              "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\laba10\\laba10.csproj": {
+                "projectPath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\laba10\\laba10.csproj"
               }
             }
           }

@@ -9,6 +9,8 @@ namespace ClassLibrary10
 {
     public class Workshop : Production, IInit
     {
+        static Random rnd = new Random();
+
         private string workshopName;
 
         public string WorkshopName
@@ -99,6 +101,11 @@ namespace ClassLibrary10
                     return result;
                 Console.WriteLine("Ошибка: Введите положительное число");
             }
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + $"{workshopName}, {area}";
         }
     }
 }

@@ -1,13 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\oop\\laba11\\",
+  "WorkspaceRootPath": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba11\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE6C1FA4-4D0D-4F4A-99EA-3BACC45A3E70}|laba11\\laba11.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\oop\\laba11\\laba11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76AD6CAC-D608-47A5-A9BD-B5EDCD36993A}|..\\laba10\\laba10\\laba10.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\laba10\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76AD6CAC-D608-47A5-A9BD-B5EDCD36993A}|..\\laba10\\laba10\\laba10.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\laba10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A55E2F8-E4CB-4562-82DA-DE0F451829B4}|..\\laba10\\ClassLibrary10\\ClassLibrary10.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\classlibrary10\\workshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A55E2F8-E4CB-4562-82DA-DE0F451829B4}|..\\laba10\\ClassLibrary10\\ClassLibrary10.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\classlibrary10\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A55E2F8-E4CB-4562-82DA-DE0F451829B4}|..\\laba10\\ClassLibrary10\\ClassLibrary10.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\classlibrary10\\productioncomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A55E2F8-E4CB-4562-82DA-DE0F451829B4}|..\\laba10\\ClassLibrary10\\ClassLibrary10.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\classlibrary10\\production.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A55E2F8-E4CB-4562-82DA-DE0F451829B4}|..\\laba10\\ClassLibrary10\\ClassLibrary10.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\classlibrary10\\iinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A55E2F8-E4CB-4562-82DA-DE0F451829B4}|..\\laba10\\ClassLibrary10\\ClassLibrary10.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\classlibrary10\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE6C1FA4-4D0D-4F4A-99EA-3BACC45A3E70}|laba11\\laba11.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba11\\laba11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE6C1FA4-4D0D-4F4A-99EA-3BACC45A3E70}|laba11\\laba11.csproj|solutionrelative:laba11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE6C1FA4-4D0D-4F4A-99EA-3BACC45A3E70}|laba11\\laba11.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\oop\\laba11\\laba11\\testcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE6C1FA4-4D0D-4F4A-99EA-3BACC45A3E70}|laba11\\laba11.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba11\\laba11\\testcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE6C1FA4-4D0D-4F4A-99EA-3BACC45A3E70}|laba11\\laba11.csproj|solutionrelative:laba11\\testcollections.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,27 +45,126 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\laba10\\Program.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\laba10\\Program.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\laba10\\Program.cs",
+              "RelativeToolTip": "..\\laba10\\laba10\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:01:53.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Building.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\laba10\\Building.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\laba10\\Building.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\laba10\\Building.cs",
+              "RelativeToolTip": "..\\laba10\\laba10\\Building.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:01:45.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Workshop.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Workshop.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\ClassLibrary10\\Workshop.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Workshop.cs",
+              "RelativeToolTip": "..\\laba10\\ClassLibrary10\\Workshop.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAuwGoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:31:39.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Shop.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Shop.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\ClassLibrary10\\Shop.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Shop.cs",
+              "RelativeToolTip": "..\\laba10\\ClassLibrary10\\Shop.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAuwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:31:22.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductionComparer.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ProductionComparer.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\ClassLibrary10\\ProductionComparer.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ProductionComparer.cs",
+              "RelativeToolTip": "..\\laba10\\ClassLibrary10\\ProductionComparer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:31:08.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Production.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Production.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\ClassLibrary10\\Production.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Production.cs",
+              "RelativeToolTip": "..\\laba10\\ClassLibrary10\\Production.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:30:41.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IInit.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\IInit.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\ClassLibrary10\\IInit.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\IInit.cs",
+              "RelativeToolTip": "..\\laba10\\ClassLibrary10\\IInit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:30:18.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Factory.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Factory.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\ClassLibrary10\\Factory.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Factory.cs",
+              "RelativeToolTip": "..\\laba10\\ClassLibrary10\\Factory.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAmwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:29:43.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Production.cs",
               "DocumentMoniker": "C:\\Users\\ZaOrd\\source\\repos\\laba10\\ClassLibrary10\\Production.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\ZaOrd\\source\\repos\\laba10\\ClassLibrary10\\Production.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\ZaOrd\\source\\repos\\laba10\\ClassLibrary10\\Production.cs",
               "ToolTip": "C:\\Users\\ZaOrd\\source\\repos\\laba10\\ClassLibrary10\\Production.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ZaOrd\\source\\repos\\laba10\\ClassLibrary10\\Production.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\ZaOrd\\source\\repos\\laba10\\ClassLibrary10\\Production.cs",
               "ViewState": "AgIAAHcAAAAAAAAAAAAswIoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T06:00:47.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "TestCollections.cs",
-              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\oop\\laba11\\laba11\\TestCollections.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba11\\laba11\\TestCollections.cs",
               "RelativeDocumentMoniker": "laba11\\TestCollections.cs",
-              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\oop\\laba11\\laba11\\TestCollections.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba11\\laba11\\TestCollections.cs",
               "RelativeToolTip": "laba11\\TestCollections.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -49,16 +172,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\oop\\laba11\\laba11\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba11\\laba11\\Program.cs",
               "RelativeDocumentMoniker": "laba11\\Program.cs",
-              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\oop\\laba11\\laba11\\Program.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba11\\laba11\\Program.cs",
               "RelativeToolTip": "laba11\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T10:23:17.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T10:23:17.249Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

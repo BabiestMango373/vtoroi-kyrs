@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pRx6W+dhOnI=",
+  "dgSpecHash": "rxd871y4X1I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj",
+  "projectFilePath": "C:\\Users\\gysik\\OneDrive\\Рабочий стол\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\ClassLibrary10.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gysik\\.nuget\\packages\\nunit\\4.3.0\\nunit.4.3.0.nupkg.sha512",
     "C:\\Users\\gysik\\.nuget\\packages\\nunit3testadapter\\4.6.0\\nunit3testadapter.4.6.0.nupkg.sha512"

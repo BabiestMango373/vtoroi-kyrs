@@ -9,6 +9,7 @@ namespace ClassLibrary10
 {
     public class Factory : Production, IInit
     {
+        static Random rnd = new Random();
         private string factoryName;
 
         public string FactoryName
@@ -76,7 +77,6 @@ namespace ClassLibrary10
         public override void RandomInit() //переопределнный метод RandomInit
         {
             base.RandomInit();
-            Random rnd = new Random();
             FactoryName = "Фабрика_" + rnd.Next(1, 100);
             Weight = rnd.NextDouble() * 300;
         }
