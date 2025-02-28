@@ -1,0 +1,15 @@
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\bin\Debug\net8.0\ldm3.exe
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\bin\Debug\net8.0\ldm3.deps.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\bin\Debug\net8.0\ldm3.runtimeconfig.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\bin\Debug\net8.0\ldm3.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\bin\Debug\net8.0\ldm3.pdb
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ldm3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ldm3.AssemblyInfoInputs.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ldm3.AssemblyInfo.cs
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ldm3.csproj.CoreCompileInputs.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ldm3.sourcelink.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ldm3.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\refint\ldm3.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ldm3.pdb
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ldm3.genruntimeconfig.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\ldm3\ldm3\obj\Debug\net8.0\ref\ldm3.dll

@@ -1,0 +1,15 @@
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\bin\Debug\net8.0\eventTest.exe
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\bin\Debug\net8.0\eventTest.deps.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\bin\Debug\net8.0\eventTest.runtimeconfig.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\bin\Debug\net8.0\eventTest.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\bin\Debug\net8.0\eventTest.pdb
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\eventTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\eventTest.AssemblyInfoInputs.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\eventTest.AssemblyInfo.cs
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\eventTest.csproj.CoreCompileInputs.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\eventTest.sourcelink.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\eventTest.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\refint\eventTest.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\eventTest.pdb
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\eventTest.genruntimeconfig.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\disc math\eventTest\eventTest\obj\Debug\net8.0\ref\eventTest.dll
