@@ -104,19 +104,19 @@
         }
 
 
-        //public int CompareTo(object obj)
-        //{
-        //    if (obj is Production other)
-        //    {
-        //        if (this.Name == other.Name)
-        //            return 0; 
-        //        if (this.Name.CompareTo(other.Name) > 0)
-        //            return 1; 
-        //        return -1;  
-        //    }
+        public int CompareTo(object obj)
+        {
+            if (obj is Production other)
+            {
+                if (this.Name == other.Name)
+                    return 0;
+                if (this.Name.CompareTo(other.Name) > 0)
+                    return 1;
+                return -1;
+            }
 
-        //    return 0; 
-        //}
+            return 0;
+        }
 
         public virtual object ShallowCopy()
         {
@@ -140,6 +140,11 @@
         public override string ToString()
         {
             return $"{Name}, {Employees}";
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 

@@ -24,3 +24,30 @@ C:\Users\ZaOrd\source\repos\laba11\laba11\obj\Debug\net8.0\refint\laba11.dll
 C:\Users\ZaOrd\source\repos\laba11\laba11\obj\Debug\net8.0\laba11.pdb
 C:\Users\ZaOrd\source\repos\laba11\laba11\obj\Debug\net8.0\laba11.genruntimeconfig.cache
 C:\Users\ZaOrd\source\repos\laba11\laba11\obj\Debug\net8.0\ref\laba11.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\nunit.engine.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\nunit.engine.api.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\nunit.engine.core.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\testcentric.engine.metadata.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\laba11.exe
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\laba11.deps.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\laba11.runtimeconfig.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\laba11.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\laba11.pdb
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\nunit.framework.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\ClassLibrary10.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\bin\Debug\net8.0\ClassLibrary10.pdb
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.csproj.AssemblyReference.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.AssemblyInfoInputs.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.AssemblyInfo.cs
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.csproj.CoreCompileInputs.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.sourcelink.json
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.csproj.Up2Date
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\refint\laba11.dll
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.pdb
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\laba11.genruntimeconfig.cache
+C:\Users\gysik\OneDrive\Рабочий стол\vtoroi-kyrs\oop\laba11\laba11\obj\Debug\net8.0\ref\laba11.dll
