@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|solutionrelative:laba12\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|solutionrelative:laba12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\Program.cs",
+              "RelativeDocumentMoniker": "laba12\\Program.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\Program.cs",
+              "RelativeToolTip": "laba12\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T10:02:51.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HashTable.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\HashTable.cs",
+              "RelativeDocumentMoniker": "laba12\\HashTable.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\HashTable.cs",
+              "RelativeToolTip": "laba12\\HashTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:32:21.113Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
