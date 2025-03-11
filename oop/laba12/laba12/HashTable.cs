@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+
 public class ListPoint<TKey, TValue>
 {
     public TKey Key { get; set; }
     public TValue Value { get; set; }
-    public ListPoint<TKey, TValue> Next { get; set; }
+    public ListPoint<TKey, TValue>? Next { get; set; }
 
     public ListPoint(TKey key, TValue value)
     {
@@ -13,106 +14,174 @@ public class ListPoint<TKey, TValue>
         Value = value;
         Next = null;
     }
-
-    public override string ToString()
-    {
-        return Key + ":" + Value.ToString();
-    }
 }
 
-public class MyCollection<TKey, TValue> : IDictionary<TKey, TValue>
+public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<KeyValuePair<TKey, TValue>>
 {
-    private ListPoint<TKey, TValue>[] table;
-    private int capacity;
+    private ListPoint<TKey, TValue>[] buckets;
     private int count;
-    private const int defaultCapacity = 10;
+    private int capacity;
 
-    public MyCollection()
+    public HashTable()
     {
-        this.table = new ListPoint<TKey, TValue>[defaultCapacity];
-        this.count = 0;
+        capacity = 1;
+        buckets = new ListPoint<TKey, TValue>[capacity];
     }
 
-    public MyCollection(int capacity)
+    public HashTable(int capacity)
     {
+        if (capacity <= 0)
+            throw new ArgumentException("Capacity must be positive");
         this.capacity = capacity;
-        this.table = new ListPoint<TKey, TValue>[capacity];
-        this.count = 0;
+        buckets = new ListPoint<TKey, TValue>[capacity];
     }
 
-    public MyCollection(MyCollection<TKey, TValue> other)
+    public HashTable(IDictionary<TKey, TValue> dictionary)
+        : this(dictionary.Count)
     {
-        this.capacity = other.capacity;
-        this.table = new ListPoint<TKey, TValue>[capacity];
-        this.count = other.count;
-
-        for (int i = 0; i < capacity; i++)
+        foreach (var pair in dictionary)
         {
-            if (other.table[i] != null)
-            {
-                ListPoint<TKey, TValue> current = other.table[i];
-                while (current != null)
-                {
-                    Add(current.Key, current.Value);
-                    current = current.Next;
-                }
-            }
+            Add(pair.Key, pair.Value);
         }
     }
 
-    private int GetIndex(TKey key)
+    public int Count => count;
+
+    public bool IsReadOnly => false;
+
+    public ICollection<TKey> Keys => new List<TKey>(this.Select(p => p.Key));
+
+    public ICollection<TValue> Values => new List<TValue>(this.Select(p => p.Value));
+
+    public TValue this[TKey key]
     {
-        return Math.Abs(key.GetHashCode()) % capacity;
+        get
+        {
+            if (TryGetValue(key, out TValue value))
+                return value;
+            throw new KeyNotFoundException();
+        }
+        set => AddOrUpdate(key, value);
     }
 
     public void Add(TKey key, TValue value)
     {
-        if (ContainsKey(key)) return;
-        int index = GetIndex(key);
-        ListPoint<TKey, TValue> newNode = new ListPoint<TKey, TValue>(key, value);
+        if (ContainsKey(key))
+            throw new ArgumentException("An item with the same key has already been added");
 
-        if (table[index] == null)
-            table[index] = newNode;
-        else
-        {
-            ListPoint<TKey, TValue> cur = table[index];
-            while (cur.Next != null) cur = cur.Next;
-            cur.Next = newNode;
-        }
-        count++;
+        AddOrUpdate(key, value);
     }
 
-    public void Add(KeyValuePair<TKey, TValue> item) => Add(item.Key, item.Value);
-
-    public bool Remove(TKey key)
+    void ICollection<KeyValuePair<TKey, TValue>>.Add(KeyValuePair<TKey, TValue> item)
     {
-        int index = GetIndex(key);
-        ListPoint<TKey, TValue> cur = table[index];
-        ListPoint<TKey, TValue> prev = null;
+        Add(item.Key, item.Value);
+    }
 
-        while (cur != null)
+    public bool Contains(KeyValuePair<TKey, TValue> item)
+    {
+        return ContainsKey(item.Key) && this[item.Key].Equals(item.Value);
+    }
+
+    public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
+    {
+        if (array == null)
+            throw new ArgumentNullException(nameof(array));
+
+        if (arrayIndex < 0 || arrayIndex >= array.Length)
+            throw new ArgumentOutOfRangeException(nameof(arrayIndex));
+
+        int index = 0;
+        foreach (var pair in this)
         {
-            if (cur.Key.Equals(key))
-            {
-                if (prev == null) table[index] = cur.Next;
-                else prev.Next = cur.Next;
-                count--;
-                return true;
-            }
-            prev = cur;
-            cur = cur.Next;
+            if (index + arrayIndex >= array.Length)
+                break;
+
+            array[index + arrayIndex] = pair;
+            index++;
+        }
+    }
+
+    public bool Remove(KeyValuePair<TKey, TValue> item)
+    {
+        if (Contains(item))
+        {
+            Remove(item.Key);
+            return true;
         }
         return false;
+    }
+
+    public void Clear()
+    {
+        Array.Fill(buckets, null);
+        count = 0;
     }
 
     public bool ContainsKey(TKey key)
     {
         int index = GetIndex(key);
-        ListPoint<TKey, TValue> cur = table[index];
-        while (cur != null)
+        var current = buckets[index];
+        while (current != null)
         {
-            if (cur.Key.Equals(key)) return true;
-            cur = cur.Next;
+            if (current.Key.Equals(key))
+                return true;
+            current = current.Next;
+        }
+        return false;
+    }
+
+    public void AddOrUpdate(TKey key, TValue value)
+    {
+        int index = GetIndex(key);
+        var current = buckets[index];
+        ListPoint<TKey, TValue>? previous = null;
+
+        while (current != null)
+        {
+            if (current.Key.Equals(key))
+            {
+                current.Value = value;
+                return;
+            }
+            previous = current;
+            current = current.Next;
+        }
+
+        var newNode = new ListPoint<TKey, TValue>(key, value);
+        if (previous == null)
+        {
+            buckets[index] = newNode;
+        }
+        else
+        {
+            previous.Next = newNode;
+        }
+        count++;
+    }
+
+    public bool Remove(TKey key)
+    {
+        int index = GetIndex(key);
+        var current = buckets[index];
+        ListPoint<TKey, TValue>? previous = null;
+
+        while (current != null)
+        {
+            if (current.Key.Equals(key))
+            {
+                if (previous == null)
+                {
+                    buckets[index] = current.Next;
+                }
+                else
+                {
+                    previous.Next = current.Next;
+                }
+                count--;
+                return true;
+            }
+            previous = current;
+            current = current.Next;
         }
         return false;
     }
@@ -120,93 +189,101 @@ public class MyCollection<TKey, TValue> : IDictionary<TKey, TValue>
     public bool TryGetValue(TKey key, out TValue value)
     {
         int index = GetIndex(key);
-        ListPoint<TKey, TValue> cur = table[index];
-        while (cur != null)
+        var current = buckets[index];
+        while (current != null)
         {
-            if (cur.Key.Equals(key))
+            if (current.Key.Equals(key))
             {
-                value = cur.Value;
+                value = current.Value;
                 return true;
             }
-            cur = cur.Next;
+            current = current.Next;
         }
-        value = default;
+        value = default!;
         return false;
     }
 
-    public TValue this[TKey key]
-    {
-        get
-        {
-            if (TryGetValue(key, out TValue value)) return value;
-            throw new KeyNotFoundException();
-        }
-        set => Add(key, value);
-    }
-
-    public ICollection<TKey> Keys
-    {
-        get
-        {
-            List<TKey> keys = new List<TKey>();
-            foreach (var pair in this)
-                keys.Add(pair.Key);
-            return keys;
-        }
-    }
-
-    public ICollection<TValue> Values
-    {
-        get
-        {
-            List<TValue> values = new List<TValue>();
-            foreach (var pair in this)
-                values.Add(pair.Value);
-            return values;
-        }
-    }
-
-    public void Clear()
-    {
-        for (int i = 0; i < capacity; i++)
-            table[i] = null;
-        count = 0;
-    }
-
-    public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
-    {
-        foreach (var pair in this)
-            array[arrayIndex++] = pair;
-    }
-
-    public bool Contains(KeyValuePair<TKey, TValue> item)
-    {
-        return TryGetValue(item.Key, out TValue value) && EqualityComparer<TValue>.Default.Equals(value, item.Value);
-    }
-
-    public bool Remove(KeyValuePair<TKey, TValue> item)
-    {
-        return Remove(item.Key);
-    }
-
-    public bool IsReadOnly => false;
-    public int Count => count;
-
     public IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()
     {
-        foreach (var bucket in table)
-        {
-            ListPoint<TKey, TValue> cur = bucket;
-            while (cur != null)
-            {
-                yield return new KeyValuePair<TKey, TValue>(cur.Key, cur.Value);
-                cur = cur.Next;
-            }
-        }
+        return new Enumerator(this);
     }
 
     IEnumerator IEnumerable.GetEnumerator()
     {
         return GetEnumerator();
+    }
+
+    private int GetIndex(TKey key)
+    {
+        return Math.Abs(key.GetHashCode() % capacity);
+    }
+
+    public void CopyTo(Array array, int index)
+    {
+        if (array == null)
+            throw new ArgumentNullException(nameof(array));
+
+        if (index < 0 || index >= array.Length)
+            throw new ArgumentOutOfRangeException(nameof(index));
+
+        var list = new List<object>();
+        foreach (var item in this)
+        {
+            list.Add(item);
+        }
+
+        list.CopyTo((object[])array, index);
+    }
+
+    public struct Enumerator : IEnumerator<KeyValuePair<TKey, TValue>>
+    {
+        private HashTable<TKey, TValue> hashTable;
+        private int index;
+        private ListPoint<TKey, TValue>? currentNode;
+        private KeyValuePair<TKey, TValue> currentPair;
+
+        public Enumerator(HashTable<TKey, TValue> hashTable)
+        {
+            this.hashTable = hashTable;
+            index = -1;
+            currentNode = null;
+            currentPair = new KeyValuePair<TKey, TValue>(default!, default!);
+        }
+
+        public KeyValuePair<TKey, TValue> Current => currentPair;
+
+        object IEnumerator.Current => Current;
+
+        public void Dispose() { }
+
+        public bool MoveNext()
+        {
+            while (true)
+            {
+                if (currentNode != null && currentNode.Next != null)
+                {
+                    currentNode = currentNode.Next;
+                    currentPair = new KeyValuePair<TKey, TValue>(currentNode.Key, currentNode.Value);
+                    return true;
+                }
+
+                index++;
+                if (index >= hashTable.capacity)
+                    return false;
+
+                currentNode = hashTable.buckets[index];
+                if (currentNode != null)
+                {
+                    currentPair = new KeyValuePair<TKey, TValue>(currentNode.Key, currentNode.Value);
+                    return true;
+                }
+            }
+        }
+
+        public void Reset()
+        {
+            index = -1;
+            currentNode = null;
+        }
     }
 }
