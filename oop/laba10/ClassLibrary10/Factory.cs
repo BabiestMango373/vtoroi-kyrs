@@ -104,7 +104,7 @@ namespace ClassLibrary10
 
         public override object ShallowCopy()
         {
-            return base.ShallowCopy();
+            return base.MemberwiseClone();
         }
 
         public override object Clone()

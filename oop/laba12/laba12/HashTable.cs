@@ -31,7 +31,7 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
     public HashTable(int capacity)
     {
         if (capacity <= 0)
-            throw new ArgumentException("Ёмкость должна быть положительная");
+            throw new ArgumentException("ёмкость должна быть положительная");
         this.capacity = capacity;
         table = new ListPoint<TKey, TValue>[capacity];
     }
@@ -176,7 +176,7 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         count++;
     }
 
-    // Перегруженный метод Add для добавления одного или нескольких элементов.
+    // Метод Add для добавления одного или нескольких элементов.
     public void Add(params KeyValuePair<TKey, TValue>[] items)
     {
         foreach (KeyValuePair<TKey, TValue> item in items)
@@ -213,7 +213,7 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         return false;
     }
 
-    // Перегруженный метод Remove для удаления одного или нескольких элементов.
+    // Метод Remove для удаления одного или нескольких элементов.
     public void Remove(params TKey[] keys)
     {
         foreach (TKey key in keys)
@@ -293,7 +293,7 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
     public HashTable<TKey, TValue> ShallowCopy()
     {
         HashTable<TKey, TValue> copy = new HashTable<TKey, TValue>(capacity);
-        copy.table = this.table; 
+        copy.table = this.table;
         copy.count = this.count;
         return copy;
     }
