@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 
@@ -278,3 +279,7 @@ namespace ldm4
         }
     }
 }
+=======
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a

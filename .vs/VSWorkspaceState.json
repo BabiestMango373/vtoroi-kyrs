@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     ""
+=======
+    "",
+    "\\oop",
+    "\\oop\\laba10",
+    "\\oop\\laba10\\ClassLibrary10",
+    "\\oop\\laba12",
+    "\\oop\\laba12\\laba12"
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
   ],
   "SelectedNode": "\\laba13.sln",
   "PreviewInSolutionExplorer": false

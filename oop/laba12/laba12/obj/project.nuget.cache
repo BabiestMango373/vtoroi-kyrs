@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Q8msim5Y53s=",
+=======
+  "dgSpecHash": "fvqlEA9Yd3k=",
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
   "success": true,
   "projectFilePath": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\laba12.csproj",
   "expectedPackageFiles": [

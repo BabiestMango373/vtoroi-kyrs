@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\",
   "Documents": [
     {
@@ -12,6 +13,17 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{55A3F3D8-FB4C-81C8-C5D5-0FD366D54051}|..\\laba10\\ClassLibrary10\\ClassLibrary10.csproj|c:\\users\\andrei scherbakov\\source\\repos\\babiestmango373\\vtoroi-kyrs\\oop\\laba10\\classlibrary10\\production.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|solutionrelative:laba12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|c:\\users\\gysik\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|solutionrelative:laba12\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
     }
   ],
   "DocumentGroupContainers": [
@@ -21,6 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -67,7 +80,38 @@
               "ViewState": "AgIAAA8BAAAAAAAAAAAiwGABAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T04:59:15.337Z",
+=======
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\Program.cs",
+              "RelativeDocumentMoniker": "laba12\\Program.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\Program.cs*",
+              "RelativeToolTip": "laba12\\Program.cs*",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAswF4AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T17:33:31.205Z",
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HashTable.cs",
+              "DocumentMoniker": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\HashTable.cs",
+              "RelativeDocumentMoniker": "laba12\\HashTable.cs",
+              "ToolTip": "C:\\Users\\gysik\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\vtoroi-kyrs\\oop\\laba12\\laba12\\HashTable.cs",
+              "RelativeToolTip": "laba12\\HashTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:32:21.113Z"
             }
           ]
         }

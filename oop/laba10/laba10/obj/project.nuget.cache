@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "WV1zVXwZ2fM=",
+=======
+  "dgSpecHash": "YLsGcdv9kjs=",
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
   "success": true,
   "projectFilePath": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba10\\laba10\\laba10.csproj",
   "expectedPackageFiles": [

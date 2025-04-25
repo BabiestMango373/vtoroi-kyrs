@@ -36,6 +36,7 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         table = new ListPoint<TKey, TValue>[capacity];
     }
 
+<<<<<<< HEAD
     public HashTable(HashTable<TKey, TValue> c)
     {
         if (c == null)
@@ -48,6 +49,14 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         foreach (var pair in c)
         {
             this.Add(pair.Key, pair.Value);
+=======
+    public HashTable(IDictionary<TKey, TValue> dictionary)
+        : this(dictionary.Count)
+    {
+        foreach (KeyValuePair<TKey, TValue> pair in dictionary)
+        {
+            Add(pair.Key, pair.Value);
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
         }
     }
 
@@ -97,6 +106,14 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         Add(item.Key, item.Value);
     }
 
+<<<<<<< HEAD
+=======
+    public bool Contains(KeyValuePair<TKey, TValue> item)
+    {
+        return ContainsKey(item.Key) && this[item.Key].Equals(item.Value);
+    }
+
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
     public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
     {
         if (array == null)
@@ -115,6 +132,7 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         }
     }
 
+<<<<<<< HEAD
     public void Clear()
     {
         for (int i = 0; i < capacity; i++)
@@ -157,6 +175,8 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
     }
 
     // Метод удаления одного элемента.
+=======
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
     public bool Remove(KeyValuePair<TKey, TValue> item)
     {
         if (Contains(item))
@@ -167,6 +187,71 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         return false;
     }
 
+<<<<<<< HEAD
+=======
+    public void Clear()
+    {
+        for (int i = 0; i < capacity; i++)
+        {
+            table[i] = null;
+        }
+        count = 0;
+    }
+
+    public bool ContainsKey(TKey key)
+    {
+        int index = GetIndex(key);
+        ListPoint<TKey, TValue> current = table[index];
+        while (current != null)
+        {
+            if (current.Key.Equals(key))
+                return true;
+            current = current.Next;
+        }
+        return false;
+    }
+
+    // Метод добавления одного элемента.
+    public void Add(TKey key, TValue value)
+    {
+        int index = GetIndex(key);
+        ListPoint<TKey, TValue> current = table[index];
+        ListPoint<TKey, TValue> previous = null;
+
+        while (current != null)
+        {
+            if (current.Key.Equals(key))
+            {
+                current.Value = value;
+                return;
+            }
+            previous = current;
+            current = current.Next;
+        }
+
+        ListPoint<TKey, TValue> newNode = new ListPoint<TKey, TValue>(key, value);
+        if (previous == null)
+        {
+            table[index] = newNode;
+        }
+        else
+        {
+            previous.Next = newNode;
+        }
+        count++;
+    }
+
+    // Метод Add для добавления одного или нескольких элементов.
+    public void Add(params KeyValuePair<TKey, TValue>[] items)
+    {
+        foreach (KeyValuePair<TKey, TValue> item in items)
+        {
+            Add(item.Key, item.Value);
+        }
+    }
+
+    // Метод удаления одного элемента.
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
     public bool Remove(TKey key)
     {
         int index = GetIndex(key);
@@ -194,6 +279,10 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         return false;
     }
 
+<<<<<<< HEAD
+=======
+    // Метод Remove для удаления одного или нескольких элементов.
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
     public void Remove(params TKey[] keys)
     {
         foreach (TKey key in keys)
@@ -219,6 +308,7 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         return false;
     }
 
+<<<<<<< HEAD
     private int GetIndex(TKey key)
     {
         return Math.Abs(key.GetHashCode() % capacity);
@@ -278,6 +368,8 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         return DeepCopy();
     }
 
+=======
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
     public IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()
     {
         for (int i = 0; i < capacity; i++)
@@ -295,4 +387,123 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
     {
         return GetEnumerator();
     }
+<<<<<<< HEAD
+=======
+
+    private int GetIndex(TKey key)
+    {
+        return Math.Abs(key.GetHashCode() % capacity);
+    }
+
+    public void CopyTo(Array array, int index)
+    {
+        if (array == null)
+            throw new ArgumentNullException("массив пустой");
+
+        if (index < 0 || index >= array.Length)
+            throw new ArgumentOutOfRangeException("индекс некорректный");
+
+        List<object> list = new List<object>();
+        foreach (KeyValuePair<TKey, TValue> item in this)
+        {
+            list.Add(item);
+        }
+        list.CopyTo((object[])array, index);
+    }
+
+    // Поиск элемента по значению.
+    public bool ContainsValue(TValue value)
+    {
+        foreach (KeyValuePair<TKey, TValue> item in this)
+        {
+            if (object.Equals(item.Value, value))
+                return true;
+        }
+        return false;
+    }
+
+    // Поверхностное копирование
+    public HashTable<TKey, TValue> ShallowCopy()
+    {
+        HashTable<TKey, TValue> copy = new HashTable<TKey, TValue>(capacity);
+        copy.table = this.table;
+        copy.count = this.count;
+        return copy;
+    }
+
+    // Глубокое копирование
+    public HashTable<TKey, TValue> DeepCopy()
+    {
+        HashTable<TKey, TValue> clone = new HashTable<TKey, TValue>(capacity);
+        foreach (var pair in this)
+        {
+            // Клонируем ключ и значение, учитывая их реальный тип
+            TKey clonedKey = (TKey)((ICloneable)pair.Key).Clone();
+            TValue clonedValue = (TValue)((ICloneable)pair.Value).Clone();
+            clone.Add(clonedKey, clonedValue);
+        }
+        return clone;
+    }
+
+    public object Clone()
+    {
+        return DeepCopy();
+    }
+
+    public struct Enumerator : IEnumerator<KeyValuePair<TKey, TValue>>
+    {
+        private HashTable<TKey, TValue> hashTable;
+        private int index;
+        private ListPoint<TKey, TValue>? currentNode;
+        private KeyValuePair<TKey, TValue> currentPair;
+
+        public Enumerator(HashTable<TKey, TValue> hashTable)
+        {
+            this.hashTable = hashTable;
+            index = -1;
+            currentNode = null;
+            currentPair = new KeyValuePair<TKey, TValue>(default(TKey), default(TValue));
+        }
+
+        public KeyValuePair<TKey, TValue> Current
+        {
+            get { return currentPair; }
+        }
+
+        object IEnumerator.Current
+        {
+            get { return currentPair; }
+        }
+
+        public void Dispose() { }
+
+        public bool MoveNext()
+        {
+            while (true)
+            {
+                if (currentNode != null && currentNode.Next != null)
+                {
+                    currentNode = currentNode.Next;
+                    currentPair = new KeyValuePair<TKey, TValue>(currentNode.Key, currentNode.Value);
+                    return true;
+                }
+                index++;
+                if (index >= hashTable.capacity)
+                    return false;
+                currentNode = hashTable.table[index];
+                if (currentNode != null)
+                {
+                    currentPair = new KeyValuePair<TKey, TValue>(currentNode.Key, currentNode.Value);
+                    return true;
+                }
+            }
+        }
+
+        public void Reset()
+        {
+            index = -1;
+            currentNode = null;
+        }
+    }
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
 }

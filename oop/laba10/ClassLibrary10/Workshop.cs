@@ -103,6 +103,22 @@ namespace ClassLibrary10
             }
         }
 
+        public override object ShallowCopy()
+        {
+            return base.MemberwiseClone();
+        }
+
+        public override object Clone()
+        {
+            return new Workshop
+            {
+                Name = this.Name,
+                Employees = this.Employees,
+                WorkshopName = this.WorkshopName,
+                Area = this.Area
+            };
+        }
+
         public override string ToString()
         {
             return base.ToString() + $", {workshopName}, {area}";

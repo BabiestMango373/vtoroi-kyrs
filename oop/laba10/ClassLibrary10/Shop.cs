@@ -95,6 +95,22 @@ namespace ClassLibrary10
             return this.ShopName == shop.ShopName && this.Type == shop.Type;
         }
 
+        public override object ShallowCopy()
+        {
+            return base.MemberwiseClone();
+        }
+
+        public override object Clone()
+        {
+            return new Shop
+            {
+                Name = this.Name,
+                Employees = this.Employees,
+                ShopName = this.ShopName,
+                Type = this.Type
+            };
+        }
+
         public override string ToString()
         {
             return base.ToString() + $", {shopName}, {type}";

@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "gixAxdOr/cs=",
+=======
+  "dgSpecHash": "yVWk/rKFAm8=",
+>>>>>>> 1b853a8f3cf1e78a08029632c43956805cdf982a
   "success": true,
   "projectFilePath": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba10\\ProgramTest\\ProgramTest.csproj",
   "expectedPackageFiles": [
