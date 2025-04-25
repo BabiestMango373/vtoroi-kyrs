@@ -45,7 +45,7 @@ namespace ClassLibrary10
         public Workshop(string name, int employees, string factoryName, double weight, string shopName, string type, string workshopName, int area) : base(name, employees)
         {
             WorkshopName = workshopName;
-            Area = area;        
+            Area = area;
         }
 
         public Workshop(Workshop workshop) : base(workshop)
@@ -83,10 +83,10 @@ namespace ClassLibrary10
 
         public override bool Equals(object? obj)
         {
-            if(!base.Equals(obj))
+            if (!base.Equals(obj))
                 return false;
             Workshop workshop = obj as Workshop;
-            if(workshop == null)  return false;
+            if (workshop == null) return false;
             return this.WorkshopName == workshop.WorkshopName && this.Area == workshop.Area;
 
         }
@@ -105,9 +105,13 @@ namespace ClassLibrary10
 
         public override string ToString()
         {
-            return base.ToString() + $"{workshopName}, {area}";
+            return base.ToString() + $", {workshopName}, {area}";
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(base.GetHashCode(), Name, Employees, workshopName, WorkshopName, area, Area);
         }
     }
 }
-        
-    
+

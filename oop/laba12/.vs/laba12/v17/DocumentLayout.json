@@ -3,18 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|c:\\users\\andrei scherbakov\\source\\repos\\babiestmango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|solutionrelative:laba12\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrei Scherbakov\\Downloads\\Telegram Desktop\\HashTable2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|c:\\users\\andrei scherbakov\\source\\repos\\babiestmango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|solutionrelative:laba12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrei Scherbakov\\Downloads\\Telegram Desktop\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|c:\\users\\andrei scherbakov\\source\\repos\\babiestmango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322FC409-ED1E-4002-AB86-AB0A01F63D2D}|laba12\\laba12.csproj|solutionrelative:laba12\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A3F3D8-FB4C-81C8-C5D5-0FD366D54051}|..\\laba10\\ClassLibrary10\\ClassLibrary10.csproj|c:\\users\\andrei scherbakov\\source\\repos\\babiestmango373\\vtoroi-kyrs\\oop\\laba10\\classlibrary10\\production.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,52 +34,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Production.cs",
+              "DocumentMoniker": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Production.cs",
+              "RelativeDocumentMoniker": "..\\laba10\\ClassLibrary10\\Production.cs",
+              "ToolTip": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba10\\ClassLibrary10\\Production.cs",
+              "RelativeToolTip": "..\\laba10\\ClassLibrary10\\Production.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwCcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T07:00:21.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\Program.cs",
               "RelativeDocumentMoniker": "laba12\\Program.cs",
               "ToolTip": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\Program.cs",
               "RelativeToolTip": "laba12\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:40:58.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HashTable.cs",
-              "DocumentMoniker": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\HashTable.cs",
-              "RelativeDocumentMoniker": "laba12\\HashTable.cs",
-              "ToolTip": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\HashTable.cs",
-              "RelativeToolTip": "laba12\\HashTable.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAAwGQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T04:59:15.337Z",
+              "WhenOpened": "2025-03-13T08:17:19.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HashTable2.cs",
-              "DocumentMoniker": "C:\\Users\\Andrei Scherbakov\\Downloads\\Telegram Desktop\\HashTable2.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\Telegram Desktop\\HashTable2.cs",
-              "ToolTip": "C:\\Users\\Andrei Scherbakov\\Downloads\\Telegram Desktop\\HashTable2.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Downloads\\Telegram Desktop\\HashTable2.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Title": "HashTable.cs",
+              "DocumentMoniker": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\HashTable.cs",
+              "RelativeDocumentMoniker": "laba12\\HashTable.cs",
+              "ToolTip": "C:\\Users\\Andrei Scherbakov\\source\\repos\\BabiestMango373\\vtoroi-kyrs\\oop\\laba12\\laba12\\HashTable.cs",
+              "RelativeToolTip": "laba12\\HashTable.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAiwGABAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:32:10.333Z",
+              "WhenOpened": "2025-03-03T04:59:15.337Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Andrei Scherbakov\\Downloads\\Telegram Desktop\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\Telegram Desktop\\Program.cs",
-              "ToolTip": "C:\\Users\\Andrei Scherbakov\\Downloads\\Telegram Desktop\\Program.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Downloads\\Telegram Desktop\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:32:03.523Z"
             }
           ]
         }

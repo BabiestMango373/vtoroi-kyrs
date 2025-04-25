@@ -97,11 +97,12 @@ namespace ClassLibrary10
 
         public override string ToString()
         {
-            return base.ToString() + $"{shopName}, {type}";
+            return base.ToString() + $", {shopName}, {type}";
         }
 
-
-
-
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(base.GetHashCode(), Name, Employees, shopName, ShopName, type, Type);
+        }
     }
 }

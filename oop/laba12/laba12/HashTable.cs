@@ -16,7 +16,7 @@ public class ListPoint<TKey, TValue>
     }
 }
 
-public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<KeyValuePair<TKey, TValue>>
+public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<KeyValuePair<TKey, TValue>>, ICloneable
 {
     private ListPoint<TKey, TValue>[] table;
     private int count;
@@ -31,17 +31,23 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
     public HashTable(int capacity)
     {
         if (capacity <= 0)
-            throw new ArgumentException("Ёмкость должна быть положительная");
+            throw new ArgumentException("ёмкость должна быть положительная");
         this.capacity = capacity;
         table = new ListPoint<TKey, TValue>[capacity];
     }
 
-    public HashTable(IDictionary<TKey, TValue> dictionary)
-        : this(dictionary.Count)
+    public HashTable(HashTable<TKey, TValue> c)
     {
-        foreach (KeyValuePair<TKey, TValue> pair in dictionary)
+        if (c == null)
+            throw new ArgumentNullException("");
+
+        this.capacity = c.capacity;
+        this.table = new ListPoint<TKey, TValue>[capacity];
+        this.count = 0;
+
+        foreach (var pair in c)
         {
-            Add(pair.Key, pair.Value);
+            this.Add(pair.Key, pair.Value);
         }
     }
 
@@ -91,11 +97,6 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         Add(item.Key, item.Value);
     }
 
-    public bool Contains(KeyValuePair<TKey, TValue> item)
-    {
-        return ContainsKey(item.Key) && this[item.Key].Equals(item.Value);
-    }
-
     public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
     {
         if (array == null)
@@ -114,6 +115,48 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         }
     }
 
+    public void Clear()
+    {
+        for (int i = 0; i < capacity; i++)
+        {
+            table[i] = null;
+        }
+        count = 0;
+    }
+
+    // Метод добавления
+    public void Add(TKey key, TValue value)
+    {
+        int index = GetIndex(key);
+        ListPoint<TKey, TValue> newNode = new ListPoint<TKey, TValue>(key, value);
+
+        if (table[index] == null)
+        {
+            table[index] = newNode;
+        }
+        else
+        {
+            ListPoint<TKey, TValue> current = table[index];
+            while (current.Next != null)
+            {
+                current = current.Next;
+            }
+            current.Next = newNode;
+        }
+        count++;
+    }
+
+
+
+    public void Add(params KeyValuePair<TKey, TValue>[] items)
+    {
+        foreach (KeyValuePair<TKey, TValue> item in items)
+        {
+            Add(item.Key, item.Value);
+        }
+    }
+
+    // Метод удаления одного элемента.
     public bool Remove(KeyValuePair<TKey, TValue> item)
     {
         if (Contains(item))
@@ -124,68 +167,6 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         return false;
     }
 
-    public void Clear()
-    {
-        for (int i = 0; i < capacity; i++)
-        {
-            table[i] = null;
-        }
-        count = 0;
-    }
-
-    public bool ContainsKey(TKey key)
-    {
-        int index = GetIndex(key);
-        ListPoint<TKey, TValue> current = table[index];
-        while (current != null)
-        {
-            if (current.Key.Equals(key))
-                return true;
-            current = current.Next;
-        }
-        return false;
-    }
-
-    // Метод добавления одного элемента.
-    public void Add(TKey key, TValue value)
-    {
-        int index = GetIndex(key);
-        ListPoint<TKey, TValue> current = table[index];
-        ListPoint<TKey, TValue> previous = null;
-
-        while (current != null)
-        {
-            if (current.Key.Equals(key))
-            {
-                current.Value = value;
-                return;
-            }
-            previous = current;
-            current = current.Next;
-        }
-
-        ListPoint<TKey, TValue> newNode = new ListPoint<TKey, TValue>(key, value);
-        if (previous == null)
-        {
-            table[index] = newNode;
-        }
-        else
-        {
-            previous.Next = newNode;
-        }
-        count++;
-    }
-
-    // Перегруженный метод Add для добавления одного или нескольких элементов.
-    public void Add(params KeyValuePair<TKey, TValue>[] items)
-    {
-        foreach (KeyValuePair<TKey, TValue> item in items)
-        {
-            Add(item.Key, item.Value);
-        }
-    }
-
-    // Метод удаления одного элемента.
     public bool Remove(TKey key)
     {
         int index = GetIndex(key);
@@ -213,7 +194,6 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         return false;
     }
 
-    // Перегруженный метод Remove для удаления одного или нескольких элементов.
     public void Remove(params TKey[] keys)
     {
         foreach (TKey key in keys)
@@ -239,6 +219,65 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
         return false;
     }
 
+    private int GetIndex(TKey key)
+    {
+        return Math.Abs(key.GetHashCode() % capacity);
+    }
+
+    public bool Contains(KeyValuePair<TKey, TValue> item)
+    {
+        return ContainsKey(item.Key) && this[item.Key].Equals(item.Value);
+    }
+
+    //Поиск элемента поключу
+    public bool ContainsKey(TKey key)
+    {
+        int index = GetIndex(key);
+        ListPoint<TKey, TValue> current = table[index];
+        while (current != null)
+        {
+            if (current.Key.Equals(key))
+                return true;
+            current = current.Next;
+        }
+        return false;
+    }
+
+    // Поиск элемента по значению
+    public bool ContainsValue(TValue value)
+    {
+        foreach (KeyValuePair<TKey, TValue> item in this)
+        {
+            if (object.Equals(item.Value, value))
+                return true;
+        }
+        return false;
+    }
+
+    // Поверхностное копирование
+    public HashTable<TKey, TValue> ShallowCopy()
+    {
+        return (HashTable<TKey, TValue>)this.MemberwiseClone();
+    }
+
+    // Глубокое копирование
+    public HashTable<TKey, TValue> DeepCopy()
+    {
+        HashTable<TKey, TValue> clone = new HashTable<TKey, TValue>(capacity);
+        foreach (var pair in this)
+        {
+            TKey clonedKey = (TKey)((ICloneable)pair.Key).Clone();
+            TValue clonedValue = (TValue)((ICloneable)pair.Value).Clone();
+            clone.Add(clonedKey, clonedValue);
+        }
+        return clone;
+    }
+
+    public object Clone()
+    {
+        return DeepCopy();
+    }
+
     public IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()
     {
         for (int i = 0; i < capacity; i++)
@@ -255,113 +294,5 @@ public class HashTable<TKey, TValue> : IDictionary<TKey, TValue>, IEnumerable<Ke
     IEnumerator IEnumerable.GetEnumerator()
     {
         return GetEnumerator();
-    }
-
-    private int GetIndex(TKey key)
-    {
-        return Math.Abs(key.GetHashCode() % capacity);
-    }
-
-    public void CopyTo(Array array, int index)
-    {
-        if (array == null)
-            throw new ArgumentNullException("массив пустой");
-
-        if (index < 0 || index >= array.Length)
-            throw new ArgumentOutOfRangeException("индекс некорректный");
-
-        List<object> list = new List<object>();
-        foreach (KeyValuePair<TKey, TValue> item in this)
-        {
-            list.Add(item);
-        }
-        list.CopyTo((object[])array, index);
-    }
-
-    // Поиск элемента по значению.
-    public bool ContainsValue(TValue value)
-    {
-        foreach (KeyValuePair<TKey, TValue> item in this)
-        {
-            if (object.Equals(item.Value, value))
-                return true;
-        }
-        return false;
-    }
-
-    // Поверхностное копирование – создает новую коллекцию с копированием структуры, но без клонирования объектов.
-    public HashTable<TKey, TValue> ShallowCopy()
-    {
-        return new HashTable<TKey, TValue>(this);
-    }
-
-    // Глубокое копирование – создает новую коллекцию, клонируя ключи и значения
-    public HashTable<TKey, TValue> DeepCopy()
-    {
-        HashTable<TKey, TValue> clone = new HashTable<TKey, TValue>(capacity);
-        foreach (KeyValuePair<TKey, TValue> item in this)
-        {
-            // Предполагается, что TKey и TValue реализуют ICloneable
-            TKey clonedKey = (TKey)((ICloneable)item.Key).Clone();
-            TValue clonedValue = (TValue)((ICloneable)item.Value).Clone();
-            clone.Add(clonedKey, clonedValue);
-        }
-        return clone;
-    }
-
-    public struct Enumerator : IEnumerator<KeyValuePair<TKey, TValue>>
-    {
-        private HashTable<TKey, TValue> hashTable;
-        private int index;
-        private ListPoint<TKey, TValue>? currentNode;
-        private KeyValuePair<TKey, TValue> currentPair;
-
-        public Enumerator(HashTable<TKey, TValue> hashTable)
-        {
-            this.hashTable = hashTable;
-            index = -1;
-            currentNode = null;
-            currentPair = new KeyValuePair<TKey, TValue>(default(TKey), default(TValue));
-        }
-
-        public KeyValuePair<TKey, TValue> Current
-        {
-            get { return currentPair; }
-        }
-
-        object IEnumerator.Current
-        {
-            get { return currentPair; }
-        }
-
-        public void Dispose() { }
-
-        public bool MoveNext()
-        {
-            while (true)
-            {
-                if (currentNode != null && currentNode.Next != null)
-                {
-                    currentNode = currentNode.Next;
-                    currentPair = new KeyValuePair<TKey, TValue>(currentNode.Key, currentNode.Value);
-                    return true;
-                }
-                index++;
-                if (index >= hashTable.capacity)
-                    return false;
-                currentNode = hashTable.table[index];
-                if (currentNode != null)
-                {
-                    currentPair = new KeyValuePair<TKey, TValue>(currentNode.Key, currentNode.Value);
-                    return true;
-                }
-            }
-        }
-
-        public void Reset()
-        {
-            index = -1;
-            currentNode = null;
-        }
     }
 }

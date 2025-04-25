@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ldm3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+811b7fd6405f891df837f1684b5e76678dd4c12c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1617ecf571919383204a924e67f7961664d232a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ldm3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ldm3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

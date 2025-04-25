@@ -144,7 +144,7 @@
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return HashCode.Combine(name, employees, Name, Employees);
         }
     }
 

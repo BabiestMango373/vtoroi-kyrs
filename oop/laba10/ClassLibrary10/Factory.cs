@@ -120,11 +120,12 @@ namespace ClassLibrary10
 
         public override string ToString()
         {
-            return base.ToString() + $"{FactoryName}, {Weight}";
+            return base.ToString() + $", {FactoryName}, {Weight}";
         }
 
-
-
-
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(base.GetHashCode(), Name, Employees, factoryName, FactoryName, weight, Weight);
+        }
     }
 }
