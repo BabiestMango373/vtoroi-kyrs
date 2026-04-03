@@ -1,1 +1,1 @@
-This repository is for PNRPU labs
+This repository is intended for laboratory work and projects at PNRPU.
